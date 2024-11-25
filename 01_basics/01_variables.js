@@ -2,6 +2,7 @@ const accountId = 144553
 let accountEmain = "kumar@gmail.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
+let accountState;
 
 //accountId = 2 // not alliwed
 
@@ -11,4 +12,9 @@ accountCity = "Bengaluru"
 
 console.log(accountId);
 
-console.table([accountId, accountEmain, accountPassword, accountCity])
+/*
+Prefer not to use var
+because of issue im block scope and functional scope
+*/
+
+console.table([accountId, accountEmain, accountPassword, accountCity, accountState])
